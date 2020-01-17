@@ -1,0 +1,10 @@
+language: swift
+osx_image: xcode11.3
+xcode_project: YOLOCoreML.xcodeproj
+
+branches:
+   - yolo-package-extraction 
+
+script:
+  - set -o pipefail
+  - swift build
